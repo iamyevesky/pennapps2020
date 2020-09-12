@@ -117,3 +117,52 @@
         font-size: 20px;
     }
 }
+
+/*-------------------MODAL------------*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center;
+    padding: 40px;
+    font: 400 18px Nunito, sans-serif;
+  }
+  
+  .modal-text {
+    text-align: center;
+    padding-top: '50px';
+  }
+  
+  /* Modal Content/Box */
+  .modal-content1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #69CFD6;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 0px 30px 30px 30px;
+    border: 1px solid white;
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 20px;
+  }
+  
+  /* The Close Button */
+  .close-modal, .close-file-modal {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-modal:hover, .close-file-modal:hover,
+  .close-modal:focus, .close-file-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

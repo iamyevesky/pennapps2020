@@ -41,10 +41,6 @@ export default class Report extends React.Component {
                         If not, provide a description of the offender.
                     </label>
                     <input type="textarea" id="offender"></input>
-                    <label for="starttime">When did it start?</label>
-                    <input type="text" id="starttime"></input>
-                    <label for="endtime">When did it end?</label>
-                    <input type="text" id="endtime"></input>
                     <label for="witnesses">
                         Were there any witnesses? 
                         If so, please provide name(s) or descriptions.

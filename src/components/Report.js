@@ -23,6 +23,37 @@ export default class Report extends React.Component {
             }
         }
     }
+    createWarningModal() {
+        // Set the modal text
+        var modal = document.getElementById("warningModal");
+        var span = document.getElementsByClassName("close-warning-modal")[0];
+       
+        // When the user clicks on the button, open the modal
+        modal.style.display = "flex";
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+
+    checkEmail() {
+        var user_email= document.getElementById("email").value;
+        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.+-]+\.edu$/;
+        if(re.test(user_email))
+        {
+            this.createModal();
+        }
+        else
+        {
+            this.createWarningModal();
+        }
+    }
 
     render() {
         return (
@@ -33,7 +64,8 @@ export default class Report extends React.Component {
                     <label for="university">What college/university do you attend?</label>
                     <input type="text" id="university"></input>
                     <label for="email">Please provide your school email address (must be .edu)</label>
-                    <input type="text" id="email" ></input>
+                    <input type="text" placeholder="user@example.edu" id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[edu]}$" required></input>
                     <label for="location">Location, date, and time of the event</label>
                     <input type="text" id="location"></input>
                     <label for="offender">
@@ -54,7 +86,7 @@ export default class Report extends React.Component {
 
                     <div className="row" style={{justifyContent: 'space-between', padding: '0px', width: '100%'}}>
                         <a href="#" className="submit-button">Exit</a>
-                        <button action="submit"  onClick={()=>{this.createModal()}}className="submit-button">Submit</button>
+                        <button action="submit"  onClick={()=>{this.checkEmail()}}className="submit-button">Submit</button>
                     </div>
                     
                 </form>
@@ -79,7 +111,18 @@ export default class Report extends React.Component {
                     </div>
                 </div>
             </div>
-        </div>
+            <div id="warningModal" className="modal">
+
+                <div className="modal-content1">
+                    <div style={{borderBottom: '3px black double'}}>
+                        <span className="close-warning-modal">&times;</span>
+                    </div>
+                    <div className="column" style={{padding: '32px', height: '100%'}}>
+                        <h1 style={{color: 'white'}}>Please enter a correct ".edu" email!</h1>
+                    </div>
+                </div>
+            </div>
+            </div>
         )
     }
 }

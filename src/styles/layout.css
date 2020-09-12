@@ -165,15 +165,15 @@
   }
   
   /* The Close Button */
-  .close-modal, .close-file-modal {
+  .close-modal, .close-warning-modal {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close-modal:hover, .close-file-modal:hover,
-  .close-modal:focus, .close-file-modal:focus {
+  .close-modal:hover, .close-warning-modal:hover,
+  .close-modal:focus, .close-warning-modal:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

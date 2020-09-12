@@ -1,14 +1,11 @@
 import React from 'react';
 import "../styles/layout.css";
-import holding_hands from '../assets/holding_hands.png';
 
 function Header() {
   return (
-    <div>
-        <div className="header">
-            <img className="logo" src={holding_hands}></img>
-            <h1>Title</h1>
-        </div>
+    <div className="header">
+        <a href="#" className="link">Home</a>
+        <a href="#Resources" className="link">Resources</a>
     </div>
   );
 }

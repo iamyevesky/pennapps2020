@@ -4,6 +4,7 @@ import Home from './Home';
 import Report from './Report';
 import Resources from './Resources';
 import Track from './Track';
+import Status from './Status';
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <Route exact path='/Report' component={Report}></Route>
       <Route exact path='/Resources' component={Resources}></Route>
       <Route exact path='/Track' component={Track}></Route>
+      <Route exact path='/Status' component={Status}></Route>
     </Switch>
   );
 }

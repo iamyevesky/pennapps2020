@@ -1,6 +1,6 @@
 import React from 'react';
-import "./styles/layout.css";
-import holding_hands from './assets/holding_hands.png';
+import "../styles/layout.css";
+import holding_hands from '../assets/holding_hands.png';
 
 function Header() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles/layout.css';
+import '../styles/layout.css';
 
-function Main() {
+function Home() {
   return (
     <div className="body">
       <div className="column">
@@ -22,10 +22,10 @@ function Main() {
         </p>
       </div>
       <div className="row">
-        <button className="report-button">REPORT</button>
+        <a href="#Report"><button className="report-button">REPORT</button></a>
       </div>
     </div>
   );
 }
 
-export default Main;
+export default Home;

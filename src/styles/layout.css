@@ -43,7 +43,13 @@
     border: 1px black solid;
     color: white;
     font-size: 32px;
+    -webkit-box-shadow:0 2px 20px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 2px 20px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 2px 20px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 .report-button:focus {
     outline: none;
+}
+.report-button:hover {
+    transform: scale(1.1);
 }

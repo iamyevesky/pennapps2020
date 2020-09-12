@@ -108,6 +108,10 @@
     font-size: 28px;
     font-weight: 200;
     padding: 8px 16px;
+    text-decoration: none;
+}
+.submit-button:active {
+    color: #CD7320;
 }
 @media only screen and (max-width: 480px) {
     .report {
@@ -166,3 +170,54 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  /*----------------------TRACK PAGE----------------*/
+.round-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+.circle {
+    border-radius: 50%;
+    border: 1px black solid;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#small-circle {
+    height: 60px;
+    width: 60px;
+}
+.arrow {
+    font-size: 48px;
+}
+.title2 {
+    font-size: 48px;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    font-weight: 200;
+}
+.check {
+    font-size: 48px;
+    color: #CD7320;
+}
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0px 64px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}

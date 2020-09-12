@@ -57,7 +57,7 @@ export default class Report extends React.Component {
                     <input type="file" id="attachment"></input>
 
                     <div className="row" style={{justifyContent: 'space-between', padding: '0px', width: '100%'}}>
-                        <a href="#" ><button className="submit-button">Exit</button></a>
+                        <a href="#" className="submit-button">Exit</a>
                         <button action="submit"  onClick={()=>{this.createModal()}}className="submit-button">Submit</button>
                     </div>
                     
@@ -73,7 +73,7 @@ export default class Report extends React.Component {
                     <div className="column" style={{padding: '10px 16px'}}>
                         <h1 style={{color: 'white'}}>Thank you for your submission!</h1>
                     </div>
-                    <div className="column" style={{borderRadius: '20px', padding: '5% 20%', backgroundColor: '#FEF8F0'}}>
+                    <div className="round-column" style={{padding: '5% 20%', backgroundColor: '#FEF8F0'}}>
                         <div id="modal-text" style={{textDecoration: 'underline'}}>Your report number:</div>
                         <h3 style={{color: '#CD7320'}}>############</h3>
                         <div id="modal-text">You will receive an email shortly regarding your report's progress.</div>

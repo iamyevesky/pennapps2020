@@ -1,0 +1,49 @@
+/*-----------------------HEADER----------------*/
+.header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #008C99;
+}
+.logo{
+    height: 40px;
+}
+
+
+/*----------------MAIN PAGE----------------*/
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.body {
+    background-color:#e7e4de;
+    padding: 32px;
+    text-align: center;
+}
+.body p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.report-button {
+    background-color: #ee4135;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px black solid;
+    color: white;
+    font-size: 32px;
+}
+.report-button:focus {
+    outline: none;
+}

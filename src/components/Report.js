@@ -40,17 +40,17 @@ export default class Report extends React.Component {
                         If known, please state the person responsible for the harassment. 
                         If not, provide a description of the offender.
                     </label>
-                    <input type="textarea" id="offender"></input>
+                    <input className="textarea" type="textarea" id="offender"></input>
                     <label for="witnesses">
                         Were there any witnesses? 
                         If so, please provide name(s) or descriptions.
                     </label>
-                    <input type="textarea" id="witnesses"></input>
+                    <input type="textarea" className="textarea" id="witnesses"></input>
                     <label for="attachment">
                         If you have any, please upload any documentation to help
                         support your case (medical records, photos/videos, etc).
                     </label>
-                    <input type="file" id="attachment"></input>
+                    <input type="file" id="attachment" style={{border: 'none'}}></input>
 
                     <div className="row" style={{justifyContent: 'space-between', padding: '0px', width: '100%'}}>
                         <a href="#" className="submit-button">Exit</a>

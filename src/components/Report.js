@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/layout.css';
 
-
     
 
 export default class Report extends React.Component {
@@ -50,12 +49,6 @@ export default class Report extends React.Component {
         const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.+-]+\.edu$/;
         if(re.test(user_email))
         {
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "/make_report/", true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.send(JSON.stringify({
-                email: user_email
-            })); 
             this.createModal();
         }
         else

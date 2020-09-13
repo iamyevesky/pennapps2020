@@ -1,7 +1,9 @@
 import React from 'react';
 import '../styles/layout.css';
 
-function Track() {
+
+export default class Track extends React.Component {
+  render() {
   return (
     <div className="body" style={{backgroundColor: '#69CFD6'}}>
       <div className="column">
@@ -9,12 +11,11 @@ function Track() {
             Enter your tracking number:
         </h2>
         <form className="report" style={{backgroundColor: '#FEF8F0', marginBottom: '32px'}}>
-            <input type="text" style={{backgroundColor: '#FEF8F0', border: 'none'}}></input>
+            <input type="text" id="number" style={{backgroundColor: '#FEF8F0', border: 'none'}}></input>
         </form>
         <a href="#Status"><button className="report-button">Track My Report</button></a>
       </div>
     </div>
   );
 }
-
-export default Track;
+}

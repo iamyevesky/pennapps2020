@@ -7,12 +7,12 @@ function Home() {
     <div className="body" style={{paddingBottom: '32px'}}>
       <div className="column" style={{ backgroundColor: '#008C99', padding: '0px', position: 'relative'}}>
           <img src={holding_hands} alt="holding_hands" className="hero_image"></img>
-          <h1 className="title">TITLE</h1>
+          <h1 className="title">NOVA</h1>
       </div>
       <div className="column">
         <p>
           Are you a college student who has recently experienced a form of sexual 
-          assault or harassment? Through [title], you can submit an anonymous report 
+          assault or harassment? Through Nova, you can submit an anonymous report 
           documenting the event, which will be sent to your school’s administration to be reviewed. 
           You will be able to track the progress of your report, and after your school has reviewed 
           it, the administration will set up a face to face appointment for further discussion to 

@@ -117,7 +117,7 @@ export default class Report extends React.Component {
                     <div style={{borderBottom: '3px black double'}}>
                         <span className="close-warning-modal">&times;</span>
                     </div>
-                    <div className="column" style={{padding: '32px', height: '100%'}}>
+                    <div className="column" id="modal-column">
                         <h1 style={{color: 'white'}}>Please enter a correct ".edu" email!</h1>
                     </div>
                 </div>

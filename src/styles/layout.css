@@ -263,11 +263,15 @@
 .check {
     font-size: 48px;
     color: #CD7320;
+    display: none;
 }
 #status {
     margin-left: 8px;
     text-decoration: underline;
     color: #CD7320;
+}
+#hide-status {
+    display: none;
 }
 .grid-container {
     display: grid;

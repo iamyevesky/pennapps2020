@@ -7,9 +7,14 @@ from django.urls import reverse
 
 from webapp.forms import MakeReportForm
 from webapp.models import Report
+from webapp.serializers import ReportSerializer
+from rest_framework import generics
 
 
 # Create your views here.
+class ReportListCreate(generics.ListCreateAPIView):
+    queryset = Report.objects.all()
+    serializer_class = ReportSerializer
 
 def index(request):
     context = {}

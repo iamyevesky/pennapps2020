@@ -10,6 +10,7 @@ class Report(models.Model):
     accused = models.CharField(max_length=200, help_text="Enter accuser's name or description")
     start_date = models.DateField()
     end_date = models.DateField()
+    content = models.TextField()
     notes = models.TextField()
     tracking_number = models.UUIDField(primary_key=True, default=uuid.uuid4,
                                        help_text='Unique ID for this particular report')

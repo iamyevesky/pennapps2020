@@ -12,3 +12,7 @@ urlpatterns += [
 urlpatterns += [
     path('track_report/', views.track_report, name='track_report'),
 ]
+
+urlpatterns += [
+    path('api/report/', views.ReportListCreate.as_view()),
+]

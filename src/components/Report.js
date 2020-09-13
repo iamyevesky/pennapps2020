@@ -9,7 +9,10 @@ export default class Report extends React.Component {
         // Set the modal text
         var modal = document.getElementById("myModal");
         var span = document.getElementsByClassName("close-modal")[0];
+        var number = document.getElementById("number");
+        var randomNum = Math.random() * 1000000;
        
+        number.textContent = Math.ceil(randomNum);
         // When the user clicks on the button, open the modal
         modal.style.display = "flex";
         // When the user clicks on <span> (x), close the modal
@@ -41,12 +44,18 @@ export default class Report extends React.Component {
             }
         }
     }
-
+    
     checkEmail() {
         var user_email= document.getElementById("email").value;
         const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.+-]+\.edu$/;
         if(re.test(user_email))
         {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/make_report/", true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+                email: user_email
+            })); 
             this.createModal();
         }
         else
@@ -103,7 +112,7 @@ export default class Report extends React.Component {
                     </div>
                     <div className="round-column" style={{padding: '5% 20%', backgroundColor: '#FEF8F0'}}>
                         <div id="modal-text" style={{textDecoration: 'underline'}}>Your report number:</div>
-                        <h3 style={{color: '#CD7320'}}>############</h3>
+                        <h3 id="number" style={{color: '#CD7320'}}>######</h3>
                         <div id="modal-text">You will receive an email shortly regarding your report's progress.</div>
                     </div>
                     <div>

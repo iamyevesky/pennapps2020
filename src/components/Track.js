@@ -5,7 +5,7 @@ import '../styles/layout.css';
 export default class Track extends React.Component {
   render() {
   return (
-    <div className="body" style={{backgroundColor: '#69CFD6'}}>
+    <div className="body" style={{backgroundColor: '#69CFD6', paddingBottom: '64px'}}>
       <div className="column">
         <h2 className='title2' style={{paddingBottom: '32px'}}>
             Enter your tracking number:

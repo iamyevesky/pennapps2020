@@ -345,3 +345,22 @@
         display: none;
     }
 }
+/*----------------RESOURCES-------------*/
+.link2 {
+    font-size: 30px;
+    margin: 16px;
+    color: black;
+}
+.link2:active {
+    color: black;
+}
+@media only screen and (max-width: 780px) {
+    .link2 {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .link2 {
+        font-size: 18px;
+    }
+}

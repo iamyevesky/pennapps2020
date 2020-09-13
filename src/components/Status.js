@@ -70,7 +70,7 @@ export default class Track extends React.Component {
 
   render(){
   return (
-    <div className="body">
+    <div className="body" style={{paddingBottom: '64px'}}>
       <div className="column">
         <h2 className='title2'>
             Report Status:

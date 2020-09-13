@@ -29,6 +29,7 @@ function Home() {
       <div className="column" style={{paddingTop: '0px'}}>
         <a href="#Report"><button className="report-button">REPORT</button></a>
         <a href="#Track"><button className="report-button">Track My Report</button></a>
+        <a href="#Resources"><button className="report-button">Resources</button></a>
       </div>
     </div>
   );

@@ -71,6 +71,7 @@
 }
 .report-button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 .hero_image {
     height: 400px;
@@ -139,6 +140,9 @@
 }
 .submit-button:active {
     color: #CD7320;
+}
+.submit-button:hover {
+    cursor: pointer;
 }
 @media only screen and (max-width: 480px) {
     .report {
